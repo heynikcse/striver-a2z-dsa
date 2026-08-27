@@ -31,6 +31,7 @@ public class HashSetExample {
 
             if(seen.contains(x)) {
                 System.out.println("Duplicate found: " + x);
+                break;
             }
             seen.add(x);
         }
