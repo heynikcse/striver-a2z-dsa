@@ -24,13 +24,22 @@ public class DequeExample {
         System.out.println(dq);
 
         //can behave like stack also
-        dq.push(30);
-        dq.push(45);
-        dq.push(65);
-        System.out.println(dq);
+        Deque<Integer> dq1 = new ArrayDeque<>();
 
-        dq.pop();
-        System.out.println(dq);
+        //adding element to stack
+        dq1.push(30);
+        dq1.push(45);
+        dq1.push(65);
+        System.out.println(dq1);
+
+        //removing element from stack
+        dq1.pop();
+        System.out.println(dq1);
+
+        //View element in stack
+        System.out.println("First element is " + dq1.peekFirst());
+        System.out.println("Last element is " + dq1.peekLast());
+
 
     }
 }
