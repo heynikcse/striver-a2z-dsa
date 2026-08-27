@@ -40,6 +40,9 @@ public class DequeExample {
         System.out.println("First element is " + dq1.peekFirst());
         System.out.println("Last element is " + dq1.peekLast());
 
+        //size of the stack
+        System.out.println(dq1.size());
+
 
     }
 }
