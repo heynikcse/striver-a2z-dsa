@@ -28,5 +28,6 @@ public class NumberHash {
         int number = sc.nextInt();
         System.out.println(hash[number]);
 
+        sc.close();
     }
 }

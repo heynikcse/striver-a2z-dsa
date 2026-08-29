@@ -21,5 +21,6 @@ public class StringHash {
 
         System.out.println(hash[character-'a']);
 
+        sc.close();
     }
 }
