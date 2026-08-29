@@ -25,9 +25,18 @@ public class HashMapping {
             map.put(array[i], map.getOrDefault(array[i], 0) + 1);
         }
 
+        //Iterator
+
+//        for (var entry : map.entrySet()) {
+//            System.out.println(entry.getKey() + " -> " + entry.getValue());
+//        }
+
+        //Use key
+
         System.out.print("Enter the number to find : ");
         int num = sc.nextInt();
 
+        //fetch
         System.out.println(map.get(num));
 
         sc.close();
