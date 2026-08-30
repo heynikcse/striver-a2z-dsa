@@ -5,11 +5,12 @@ If there are multiple elements that appear a maximum number of times,
 find the smallest of them.
  */
 
-// By Using HashMap we can solve this problem in more easy way .
+//By using number Hashing -> Array Hashing
 
+package HighestOccurringElement;
 import java.util.*;
 
-public class HighestOccurringElement {
+public class HighestOccurringUsingArray {
 
     static int mostFrequentElement(int[] nums) {
 
@@ -29,15 +30,15 @@ public class HighestOccurringElement {
         }
 
         int max = hash[0];
-        int maxIndex = 0;
+        int answer = 0;
 
         for(int i = 0 ; i < hash.length ; i++ ) {
             if ( hash[i] >  max ){
                 max = hash[i];
-                maxIndex = i ;
+                answer = i ;
             }
         }
-        return maxIndex ;
+        return answer ;
     }
 
     static void main(String[] args) {

@@ -8,7 +8,7 @@ output look like : [ [key,value], [key,value], [key,value] ]
 
 import java.util.*;
 
-public class CountingFrequencies {
+public class CountFrequency {
 
     static List<List<Integer>> count(int[] nums) {
 
