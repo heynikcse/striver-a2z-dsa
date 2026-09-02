@@ -37,7 +37,7 @@ public class MergeSort {
 
     static void mergeSort(ArrayList<Integer> list , int low , int high) {
 
-        if( low == high ){
+        if( low >= high ){
             return;
         }
         int mid = (low + high) / 2 ;
