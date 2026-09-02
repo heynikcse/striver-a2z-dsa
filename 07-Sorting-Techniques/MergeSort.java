@@ -11,7 +11,7 @@ public class MergeSort {
 
         while(left <= mid && right <= high){
 
-            if( getInteger(list, left) < list.get(right)) {
+            if(list.get(left) < list.get(right)) {
                 temp.add(list.get(left)) ;
                 left ++ ;
             }
@@ -33,10 +33,6 @@ public class MergeSort {
             list.set(i , temp.get(i-low)) ;   // index of temp is i-low for checking all index value .
         }
 
-    }
-
-    private static Integer getInteger(ArrayList<Integer> list, int left) {
-        return list.get(left);
     }
 
     static void mergeSort(ArrayList<Integer> list , int low , int high) {
